@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quản lý sinh viên bằng javascript </title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<div class="panel">
+		<div class="panel-heading">
+			Thông Tin Sinh Viên Nhập Vào
+		</div>
+		<div class="panel-body">
+			<form method="post">
+				<div class="form-group">
+					<label>Tên Sinh Viên:</label>
+					<input type="number" name="index" id="index" value="" hidden="true">
+					<input class="form-control" type="text" name="studentname" id="studentname" placeholder="Điền tên sinh viên">
+					
+				</div>
+				<div class="form-group">
+					<label>Quê Quán Sinh Viên:</label>
+					<input type="number" name="index" id="index" value="" hidden="true">
+					<input class="form-control" type="text" name="hometown" id="hometown" placeholder="Điền quê sinh viên">
+					
+				</div>
+				<div class="form-group">
+					<label>Số Điện Thoại:</label>
+                    <input type="number" name="index" id="index" value="" hidden="true">
+					<input class="form-control" type="text" name="phonenumber" id="phonenumber" placeholder="Điền số điện thoại">
+					
+				</div>
+				<div class="form-group">
+					<label>Địa Chỉ Mail:</label>
+                    <input type="number" name="index" id="index" value="" hidden="true">
+					<input class="form-control" type="text" name="emailaddress" id="emailaddress" placeholder="Điền địa chỉ mail">
+					
+				</div>
+                <div class="form-group">
+					<label>Tuổi:</label>
+                    <input type="number" name="index" id="index" value="" hidden="true">
+					<input class="form-control" type="number" name="age" id="age" placeholder="Điền tuổi">
+				
+				</div>
+				
+				<div class="form-group">
+					<label>Giới Tính:</label>
+                    <input type="number" name="index" id="index" value="" hidden="true">
+					<input class="form-control" type="text" name="gender" id="gender" placeholder="Điền giới tính">
+					
+				</div>
+				<div class="form-group">
+					<button class="btn btn-success" type="button" onclick="addStudent()">Add Student</button>
+					<button class="btn btn-danger" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="panel" style="margin-top: 20px;">
+		<div class="panel-heading">
+			Student List
+		</div>
+		<div class="panel-body">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>No</th>
+						<th>Student Name</th>
+						<th>Home Town</th>
+						<th>Phone Number</th>
+						<th>Email Address</th>
+						<th>Age</th>
+						<th>Gender</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="result">
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<script src="../js/myFunction.js"></script>
+</body>
+</html>
